@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = props => {
+    const count = props.count;
     return (
         <div>
-            <h1>Contact Page</h1>
+            <h1>Contact Page: {count}</h1>
         </div>
     );
 };

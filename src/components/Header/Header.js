@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Header = () => {
-    //local state
-    const [count, setCount] = useState(10);
+const Header = props => {
+    const count = props.count;
+    const setCount = props.setCount;
 
     const handleIncrement = () => {
         setCount(count + 1);
@@ -16,3 +16,4 @@ const Header = () => {
 };
 
 export default Header;
+//Share state with sibmiling component
