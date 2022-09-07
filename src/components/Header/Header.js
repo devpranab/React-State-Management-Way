@@ -16,4 +16,3 @@ const Header = props => {
 };
 
 export default Header;
-//Share state with sibmiling component
