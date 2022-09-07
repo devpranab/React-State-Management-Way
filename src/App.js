@@ -8,17 +8,17 @@ export const CategoryContext = createContext();
 
 function App() {
   //local state
-  const [count, setCount] = useState(10);
+  const [category, setCategory] = useState('laptop');
 
   return (
     <div className="App">
 
       {/* <CategoryContext.Provider value="laptop"> or*/}
-      <CategoryContext.Provider value={[count, setCount]}> {/* dynamic value */}
-      <span>Count Value State: {count}</span>
+      <CategoryContext.Provider value={[category, setCategory]}> {/* dynamic value */}
+      <span>Count Value State: {category}</span>
       <Header/>
-      <Home count={count} setCount={setCount}/>
-      <Contact count={count}/>
+      <Home/>
+      <Contact/>
       </CategoryContext.Provider>
      
     </div>

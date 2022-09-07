@@ -1,5 +1,5 @@
 <h3>State-Management-Way</h3>
-<pre>Hook(), Built-in method(), Redux Packages/Module</pre>
+<span>Hook(useState), Built-in method(createContext), Redux Packages/Module</span>
 
 _Overview about state management using local state useState hook
 _Share state with sibmiling component
