@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CategoryContext } from '../../App';
 
 const Header = props => {
-    const count = props.count;
-    const setCount = props.setCount;
+    const [count, setCount] = useContext(CategoryContext);
 
     const handleIncrement = () => {
         setCount(count + 1);

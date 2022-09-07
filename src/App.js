@@ -13,9 +13,10 @@ function App() {
   return (
     <div className="App">
 
-      <CategoryContext.Provider value="laptop"> {/* value={count} -or dynamic value */}
+      {/* <CategoryContext.Provider value="laptop"> or*/}
+      <CategoryContext.Provider value={[count, setCount]}> {/* dynamic value */}
       <span>Count Value State: {count}</span>
-      <Header count={count} setCount={setCount}/>
+      <Header/>
       <Home count={count} setCount={setCount}/>
       <Contact count={count}/>
       </CategoryContext.Provider>
